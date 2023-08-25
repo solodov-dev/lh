@@ -1,4 +1,4 @@
-module Markup (Document, Structure, parse) where
+module Markup (Document, Structure(..), parse) where
 
 import Data.Maybe (maybeToList)
 import Numeric.Natural
@@ -12,7 +12,7 @@ data Structure
   | UnorderedList [String]
   | OrderedList [String]
   | CodeBlock [String]
-  deriving (Show)
+  deriving (Show, Eq)
 
 parse :: String -> Document
 parse = parseLines Nothing . lines

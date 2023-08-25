@@ -2,14 +2,14 @@ module Html
   ( Html,
     DomNode,
     Title,
-    append_,
     render_,
     html_,
     p_,
-    h1_,
+    h_,
     ol_,
     ul_,
     code_,
+    empty_,
   )
 where
 
